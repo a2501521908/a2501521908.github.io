@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            我的一个道姑朋友-背景 | 
+        
+        小轲博客
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="https://www.keshaowl.cn/favicon.ico">
+    <link rel="icon" href="https://www.keshaowl.cn/favicon.ico">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="小轲博客，是小轲的个人博客！更新个人教程，网站程序等。当然会更新小轲自己的生活等">
+    <meta name="keywords" content=",谈心">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="小轲博客">
+    <meta name="msapplication-starturl" content="https://www.957xx.cc/2018/07/03/我的一个道姑朋友-背景/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="小轲博客">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="https://www.keshaowl.cn/favicon.ico">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://www.957xx.cc/2018/07/03/我的一个道姑朋友-背景/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="我的一个道姑朋友-背景 | 小轲博客">
+    <meta property="og:image" content="https://www.keshaowl.cn/favicon.ico">
+    <meta property="og:description" content="小轲博客，是小轲的个人博客！更新个人教程，网站程序等。当然会更新小轲自己的生活等">
+    <meta property="og:article:tag" content="谈心"> 
+
+    
+        <meta property="article:published_time" content="Tue Jul 03 2018 20:31:03 GMT+0800">
+        <meta property="article:modified_time" content="Thu Jul 12 2018 10:14:23 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://www.957xx.cc/2018/07/03/我的一个道姑朋友-背景/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://www.957xx.cc/2018/07/03/我的一个道姑朋友-背景/index.html",
+    "headline": "我的一个道姑朋友-背景",
+    "datePublished": "Tue Jul 03 2018 20:31:03 GMT+0800",
+    "dateModified": "Thu Jul 12 2018 10:14:23 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "小轲博客",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hello, my friend, like you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "小轲博客",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "https://www.keshaowl.cn/favicon.ico"
+        }
+    },
+    "keywords": ",谈心",
+    "description": "小轲博客，是小轲的个人博客！更新个人教程，网站程序等。当然会更新小轲自己的生活等",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#女主："><span class="post-toc-number">1.</span> <span class="post-toc-text">女主：</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#道士："><span class="post-toc-number">2.</span> <span class="post-toc-text">道士：</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#胭脂姑娘："><span class="post-toc-number">3.</span> <span class="post-toc-text">胭脂姑娘：</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#婚礼上的一名宾客："><span class="post-toc-number">4.</span> <span class="post-toc-text">婚礼上的一名宾客：</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#结局："><span class="post-toc-number">5.</span> <span class="post-toc-text">结局：</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#感谢总结："><span class="post-toc-number">6.</span> <span class="post-toc-text">感谢总结：</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                我的一个道姑朋友-背景
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>小轲博客</strong>
+        <span>Jul 03, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/谈心/">谈心</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=我的一个道姑朋友-背景&url=https://www.957xx.cc/2018/07/03/我的一个道姑朋友-背景/index.html&pic=https://www.957xx.cchttps://www.keshaowl.cn/favicon.ico&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=我的一个道姑朋友-背景&url=https://www.957xx.cc/2018/07/03/我的一个道姑朋友-背景/index.html&via=小轲博客" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.957xx.cc/2018/07/03/我的一个道姑朋友-背景/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://www.957xx.cc/2018/07/03/我的一个道姑朋友-背景/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>陌生人，你好。欢迎来到这里！</p>
+<p>也许你也听过我的一个道姑朋友，感受也许很深，也许很浅。当然这并不重要，让我们一起来了解这首歌的背景，我相信，你看完后会有些感受。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=864027934&auto=1&height=66"></iframe>
+
+<p>由于我找很长时间没找到以冬的链接，只能搜索播放器的链接奉上想听的朋友可以点击下：<a href="https://music.957xx.cc/?name=%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B%20%20%E4%BB%A5%E4%B8%9C&amp;type=qq" target="_blank" rel="noopener">点我</a></p>
+<p><img src="https://i.loli.net/2018/07/03/5b3b709216bc7.jpg" alt="img"> </p>
+<h5 id="女主："><a href="#女主：" class="headerlink" title="女主："></a>女主：</h5><p>​        我是个孤儿，那天我上山采药,突然下暴雨。不 知所措的我躲在屋檐下等雨停恍然看见一个 与我年龄相仿的少年。 他身着白衣撑着伞朝我走来，说要送我回家，而 我早已陷入他那对深邃的眼眸中心内一阵 悸动。他一把拉我入伞下。   我得知他是山上的道士，也刚好下山采药，他把  伞赠予我，一个人回去了。  还在茅屋门口目送他的我愣在原地。后来我采 药卖钱买了一盒桂花糕去山上和他道谢，他也很开心的样子收下了。我和他走在山路上像是孩子一样嬉戏，他送我   下山。之后我便总去给他送东西，不论是自己   做的还是买的，他也都会很开心的收下  ，之后我们聊着天。</p>
+<p>​          每次他都送我下山，我们一 起骑着马一起游玩。 记得我送给他马具的时候他特别开心，他扶着在 我耳边说一直会保护我。 这天突然下暴雨，我住的茅屋破烂,于是决定去 山上当一个道姑，这样就能永远陪着他了。 </p>
+<p>​         我带着他送给我的伞，还有为数不多的家产上 山去当了道姑，但他好像不在。另一个道长再三问我是不是确定好了要当道姑 ，当了道姑后要断红尘，即使这能永远陪在他身   边也好。 于是就换了一身素装，成了一名道姑，之后的日 子每天都能与他遇见，他还是原来的样子总是   和我嬉闹。   但我总是发现他老是下山而且越来越频繁，但   每次回来都会给我带来胭脂红妆什么的送给  我，我开心极了。    </p>
+<p>​      这天夜晚，他刚从山下回来，敲我房门，要送给我一个胭脂,说这是最新款的，女孩子用了后特别漂亮，我开心极了。对他说，这样好像不太好,总是送我东西，被其他人看见就不好了，他说只管收着就好了。他问我，思念一个人是什么感觉，还没等我回答，他就转身离去了，我心里一阵悸动。就这样过了三年。</p>
+<p>​       这天他突然说要还俗，因为他和乡下一个卖胭脂的姑娘私定了终身，并且答应要娶她,于是道长带着大家的祝福收拾收拾就下山了，我呆呆的愣在原地，眼眶渐渐湿润。原来三年前他喜欢的就不是我，那送我的那些胭脂只是为了讨好她，思念的人自然也不是我，想到这我泪水再也忍不住。不久就传来道长喜宴的消息，我假装偶然赶上他们的喜宴，他看见是我先是 愣了一下。</p>
+<p><img src="https://i.loli.net/2018/07/03/5b3b72626eaf1.jpg" alt="img"> </p>
+<p>​      他还是一身白衣如旧，依附在他身旁的佳人有如花的颜容。   她问他我是谁，他说是以前在山上当道士的   时候的   一个道姑朋友，身边佳人有露出了甜美的笑 容。此时不知为什么决定他们很是般配。但是   我还是想上前问他，是不是我送的马具不够好   看，是不是那天的桂花糕我没捂热，  是不是世上的人都是这样连自己的承诺都可 以随 意的收回。 好想一把上前抱住他在他白皙的侧脸留一个唇印，任旁人惊讶，可是我不能，只能强忍微笑给了 他们祝福,并把当年道长送我的伞送给了他们当作贺礼。 我在角落里独自饮酒，转身离去谁也没看见 我转身后的泪如雨下。</p>
+<p>​      后来我一个人去了很多地方 从春天一直走到冬天，那个时候的那件事和事 里的那个人，就好像我做的一场梦。 现在梦醒了，什么都没了。    </p>
+<h5 id="道士："><a href="#道士：" class="headerlink" title="道士："></a>道士：</h5><p>我是一个道士，却爱上了一个经常上山探药的 姑娘，她不知道我怕她发生危险经常在远处保护着她。 那天突下暴雨，见她却无带伞连忙寻伞去接她， 我一身白衣见她檐下避雨，一把拉入伞下， 我说送她回家。 姑娘面色绯红眼里闪着光，那是我这辈子见 到的最动人的眼神。我把伞赠予了她,独自一人回了山上。</p>
+<p><img src="https://i.loli.net/2018/07/03/5b3b729a5734c.jpg" alt="img"> </p>
+<p>后来她 到观中送来一盒桂花糕 与我道谢，以表感激我 送她下山，我和她走在山路上，她一直专心倾听   着我说的话。之后她总是会到观里来送我不同的东西，每次我都会收下后，和她一起聊天，送她下山。我们 一起骑马游玩,记得有一次她送我一具马鞍,我   那天很开心，把她拥入怀下伏在她耳边许道   ,我会一直保护她。  原本心中定了还俗的念想，  这天天下暴雨，我一个道友告知我，有位姑娘在   观中当了道姑，她一身素衣看见我后好像很开   心的样子，但我却心中忧郁万千，后来才知道她 是为了我才当了道姑。   还是，原来那样我们每天都有很多话聊为了讨   她欢心，我每次都会从山下挑一盒胭脂红妆回来送她，她也都会很开心的收下。 </p>
+<p>​     这天晚上我挑了一个非常贵重的胭脂给她送了 过去她怕被人看见了不好，我说只管收着就好，问她，你知道思念是什么感觉么?她深思，我却   没等她回我便离开了去。   就这样过去了三年，一天我在山下胭脂摊挑选 胭脂，卖胭脂的是一位姑娘身着艳丽,却也没   过多注意。   不料下起暴雨，傍无伞具。姑娘见状便留我小   坐略饮薄茶等雨后天晴再走不迟。       </p>
+<p>​      半饮过后，头感昏沉，心中情起。翌日早上，姑娘 |给我看榻上落红，并要我负责，虽尽是愧疚与悲 戚，但也不能推辞责任，免姑娘日后难见他人，那 天晚上我一人楼中独饮,心中她的身影若影若 现，不敢再去与她相见。 后来我还俗与姑娘大喜当天，她身红衣红唇， 美得凄凉，我却不敢正眼看她 身旁佳人问到她是谁，我只轻声回她一句那是我的一个道姑朋友。 </p>
+<p>​     这天她一个人在角落不停地喝酒,最后也不知道她是怎么离开的。 傍晚,在满布红烛的房间里，佳人一人独坐红 榻。我抚摸着她送我的那具马鞍， 从袖中拿出那温热的桂花糕送入嘴中，眼中湿 润已久心里想的却不是眼前人。  </p>
+<h5 id="胭脂姑娘："><a href="#胭脂姑娘：" class="headerlink" title="胭脂姑娘："></a>胭脂姑娘：</h5><p>​      我是个卖胭脂的姑娘，他是山上的道士我偷偷 留意他很久了。 在一个暴雨天我在我的摊位旁看到了他，为另 一个模样清秀的姑娘撑伞， 他们轻轻相拥，他说着好听的诺言说想一直拥 着她，那姑娘面色绯红，眼里闪着光一那是我这 辈子见到的最动人的眼神，但是我却嫉妒得发 狂,我一定要阻止他们在一起!  !不久后，听说那姑娘当了道姑，我有些不理解她 的想法。</p>
+<p><img src="https://i.loli.net/2018/07/03/5b3b72d488d36.jpg" alt="img"> </p>
+<p>​     但是,就在她当道姑那一天，我看到了 山下的他，我化着精致的妆容， 一颦一笑皆是风情，莲步轻移眉眼低垂，这是我有意为之的，我对自己的容颜有着十足的自信， 他却熟视无睹， 只是细细询问我各种胭脂的用法，后来他买了 几盒胭脂，脸_上漾着笑，他是在想她吧  </p>
+<p>  不行，他是我爱的男人，我要用我的万种风情得   到他!他走后，我在铜镜前仔细端详自己的容颜，不知为何，却觉得 此刻的我的一双桃花眼竟比不上那个小   道姑的一对眸子..后来他常来我的店铺挑选胭   脂，但也只是选胭脂而已。   终于，有一天，他挑完胭脂后下起了雨，他没带伞，   我留他小坐略饮薄酒，并在他的酒中加了   催情，药，他浑然不觉…  </p>
+<p>​     那个夜晚，我的阁中春色浓。翌日早上，我给他看榻上的落红，并要他负责，他的眼中尽是愧疚与悲戚，良久，他同意了。   大婚那日锣鼓喧天，好不热闹，我却看到了红唇   红衣的她，她明明只是中上之姿，比起我可差远   了,此刻我却觉得她有一种惊心动魄的美，我故   意在她面前问他这是谁，他怔了一刻随即平静   1地说道:”她是我的一个道姑朋友。”  </p>
+<p>​      我乖巧地点了点头，拉他到一旁后来我看到她在角落里不停地饮酒 ，她是怎么离开的我也不得而知。傍晚,在布满 红烛的房间里，他并没有碰我，让我先睡我却在 深夜看到他抚摸着一副马 鞍,往嘴里塞着桂花 糕，压抑着自己的哭声。 房间的角落静静地躺着一把油纸伞.  </p>
+<h5 id="婚礼上的一名宾客："><a href="#婚礼上的一名宾客：" class="headerlink" title="婚礼上的一名宾客："></a>婚礼上的一名宾客：</h5><p>​      我是婚礼上的一位宾客，至于叫什么就不便透 露了。卖胭脂的姑娘结婚了邀请我们这些邻 里去参加婚礼。 那个姑娘啊，我看着她从蹒跚学步到如今的豆 蔻年华，不知不觉居然要嫁人了。 外 面锣鼓喧天，屋里张灯结彩，好派喜庆的模 样。 可新郎生硬 的抱着新娘一脸落 寞看不 出一 丝的欢喜。</p>
+<p>​    直到一位红衣道姑的出现才让他眼中焕发出惊 人的神采，我才觉得事情好像不是那么简单。 胭脂姑娘 问他那女子是谁，他愣了一下故作平 淡的说:“她是我的一个道姑朋友”。 多么平淡的一句话，可是我从里面听出了多么 复杂的情感一 不甘、愧疚、心灰意冷 于是我便留意起那位道姑朋友她看着淡然的 新郎红了眼眶，只是不停的饮酒.. 心里突然堵得慌。</p>
+<p>​    我原来并不是一个多愁善感的人。是道长那一   瞬间仿佛活了过来的神采 ，还是道姑踉踉跄跄离去时眼角挂着的泪珠触   动了我?我不得而知，我只是觉得他们才是本应   该在起的人…  犹记那日天降大雨，我坐在门前屋檐下看见一   位道长撑伞雨中前行，白衣淡然,翩若惊鸿。   他把一位姑娘拥入怀中脸上溢着淡淡的笑容，   或许才这是抱住了幸福的模样吧..  </p>
+<h5 id="结局："><a href="#结局：" class="headerlink" title="结局："></a>结局：</h5><p>  道士走后，留下胭脂姑娘，没人知道道姑走到哪里，道士只想一直找 下去他相信总有一天会找到她…道姑走过海边，这是她第一次见到海，可她想与心中的那人一起倾听大海的声音想到这,她自嘲的笑笑，几天后路过这里，一位白衣少年驾着马,他心想:她一定会喜欢大海。</p>
+<p>​     可少年没有停下，他不敢停下，害怕再次错过 她。道姑来到瀑布下，站在一块石头 上感受 到冰凉的水珠轻吻着她的脸颊她不禁想起那年道士大婚时她很想走_上去 把抱住他,在他白 净的脸留一 个唇印。怎么又想起这件事，道姑自言自语道。 几天后，白衣少年依旧马不停蹄地赶着。 连风景都来不及看。 </p>
+<p>​    五年过去了，少年陪道姑看完了这世间的繁华 和苍凉。 他们近在咫尺却远在天变道姑来到了洛阳，正 值夏季，突然来的暴雨让道姑不知所措，慌乱中 她跌入了一个温暖的怀抱，她吓得-愣， 抬眼一看，一张陌生的脸她有些失望眼底闪 过一抹不经意间的落寞， 1但她很快反应过来的对那个人道歉.  </p>
+<p>   她想着:他应该已经和那位姑娘都有了孩子吧， 怎会来寻我。 水从她脸_上划过，不知是泪水还是雨水。 这时，一双好看的手将她拉入怀中道士在她耳 边轻声说到“我找了你五年,还俗吧，我娶你。</p>
+<p><img src="https://i.loli.net/2018/07/03/5b3b733e2bed9.jpg" alt="img"> </p>
+<h5 id="感谢总结："><a href="#感谢总结：" class="headerlink" title="感谢总结："></a>感谢总结：</h5><p> 首先给看完的棒棒的你一个掌声，由于文章的字数较多。可能分段本人分的也不太好，也感谢你，陌生人！能看完这篇文章。 也许我们的人生就是一段旅行，一声会看见很多人可是真正有感觉的人总是那么一两个。走到一起真的不容易，珍惜眼前情义。</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'true' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "OUpmlYUxojJKPUexl0jbqBen-gzGzoHsz",
+        appKey: "bFVLKcqpcD4wxmOMvXpnATHG",
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn'
+    });
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/07/13/那些年我们在北京租过的房子/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/06/28/欢迎来到小轲博客/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="小轲博客's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        admin@957xx.cc
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:admin@957xx.cc" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2019/12/">December 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">June 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">February 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">November 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">September 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">August 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">July 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">June 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">May 2018<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/友情链接" title="Links">
+                
+                    <i class="material-icons sidebar-material-icons">link</i>
+                
+                Links
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+        <a href="https://weibo.com/u/5658942780" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/a2501521908" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/zshuaike/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>小轲博客
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+				<div class="footer-develop-div"><p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
